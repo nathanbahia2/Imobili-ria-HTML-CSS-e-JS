@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imobiliária</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" id="logo">Imóveis Nathan</a>
+            <button id="btn-open-menu"><img src="src/images/icons/menu-aberto.png" width="20" alt=""></button>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">EMPRESA</a></li>
+                <li><a href="#">CONTATO</a></li>
+            </ul>
+            <div id="nav-contact">
+                <div>
+                    <span>Entre em contato</span>
+                    <span>(24) 3353-1234 - (24) 99975-1234</span>
+                </div>
+                <div><img src="src/images/icons/smartphone.png" width="36"/></div>
+                <div><button class="green">WHATSAPP</button></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="menu-mobile" class="hidden">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">EMPRESA</a></li>
+            <li><a href="#">CONTATO</a></li>
+        </ul>
+        <button id="btn-close-menu">Fechar</button>
+    </section>
+    
+    <main>
+        <section id="banner">
+            <h2>O número 1 em venda, compra, administração e avaliação de imóveis!</h2>
+
+            <h2>Destaques</h2>
+            <div id="carousel" class="scrollbar-custom" pos="0"></div>
+            <button id="prev-carousel"><img src="src/images/icons/prev.png" width="32" alt="botão de controle do carousel - item anterior"></button>
+            <button id="next-carousel"><img src="src/images/icons/next.png" width="32" alt="botão de controle do carousel - próximo item"></button>
+        </section>
+
+
+        <section id="filters">
+            <h2>Buscar imóveis</h2>
+            <div class="fields">
+                <select><option value="1">Imóvel para</option></select>
+                <select><option value="1">Tipo do imóvel</option></select>
+                <select><option value="1">Cidade</option></select>
+                <input type="text" placeholder="Código">
+                <input type="number" min="0" placeholder="Valor mínimo">
+                <input type="number" min="0" placeholder="Valor máximo">
+                <button class="green">BUSCAR</button>
+            </div>
+        </section>
+
+
+        <section class="products">
+            <div class="title">
+                <h2>VENDA</h2>
+                <h3>Destaques para venda</h3>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <div class="product-price">R$ 600,00</div>
+                    <div class="card-image">
+                        <img src="src/images/houses/casa1.jpg" alt="product image">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <b>Casa para venda</b><br>
+                            <span>Loteamento Bondarovshy</span>
+                        </div>
+                        <div class="card-details">
+                            <span>
+                                <span><img src="src/images/icons/expand.png" width="12" alt="icone área do imóvel"></span>
+                                <span>Área m²</span>
+                                <span>-</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone quartos"></span>
+                                <span>Dorm.</span>
+                                <span>3</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone suítes"></span>
+                                <span>Suítes</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/car.png" width="12" alt="icone vagas na garagem"></span>
+                                <span>Vagas</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/water.png" width="12" alt="icone banheiros"></span>
+                                <span>Banheiros</span>
+                                <span>2</span>
+                            </span>
+                        </div>
+                        <button class="green">DETALHES</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product-price">R$ 600,00</div>
+                    <div class="card-image">
+                        <img src="src/images/houses/casa4.jpg" alt="product image">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <b>Casa para venda</b><br>
+                            <span>Loteamento Bondarovshy</span>
+                        </div>
+                        <div class="card-details">
+                            <span>
+                                <span><img src="src/images/icons/expand.png" width="12" alt="icone área do imóvel"></span>
+                                <span>Área m²</span>
+                                <span>-</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone quartos"></span>
+                                <span>Dorm.</span>
+                                <span>3</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone suítes"></span>
+                                <span>Suítes</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/car.png" width="12" alt="icone vagas na garagem"></span>
+                                <span>Vagas</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/water.png" width="12" alt="icone banheiros"></span>
+                                <span>Banheiros</span>
+                                <span>2</span>
+                            </span>
+                        </div>
+                        <button class="green">DETALHES</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product-price">R$ 600,00</div>
+                    <div class="card-image">
+                        <img src="src/images/houses/casa1.jpg" alt="product image">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <b>Casa para venda</b><br>
+                            <span>Loteamento Bondarovshy</span>
+                        </div>
+                        <div class="card-details">
+                            <span>
+                                <span><img src="src/images/icons/expand.png" width="12" alt="icone área do imóvel"></span>
+                                <span>Área m²</span>
+                                <span>-</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone quartos"></span>
+                                <span>Dorm.</span>
+                                <span>3</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone suítes"></span>
+                                <span>Suítes</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/car.png" width="12" alt="icone vagas na garagem"></span>
+                                <span>Vagas</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/water.png" width="12" alt="icone banheiros"></span>
+                                <span>Banheiros</span>
+                                <span>2</span>
+                            </span>
+                        </div>
+                        <button class="green">DETALHES</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product-price">R$ 600,00</div>
+                    <div class="card-image">
+                        <img src="src/images/houses/casa1.jpg" alt="product image">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <b>Casa para venda</b><br>
+                            <span>Loteamento Bondarovshy</span>
+                        </div>
+                        <div class="card-details">
+                            <span>
+                                <span><img src="src/images/icons/expand.png" width="12" alt="icone área do imóvel"></span>
+                                <span>Área m²</span>
+                                <span>-</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone quartos"></span>
+                                <span>Dorm.</span>
+                                <span>3</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone suítes"></span>
+                                <span>Suítes</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/car.png" width="12" alt="icone vagas na garagem"></span>
+                                <span>Vagas</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/water.png" width="12" alt="icone banheiros"></span>
+                                <span>Banheiros</span>
+                                <span>2</span>
+                            </span>
+                        </div>
+                        <button class="green">DETALHES</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product-price">R$ 600,00</div>
+                    <div class="card-image">
+                        <img src="src/images/houses/casa3.jpg" alt="product image">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <b>Casa para venda</b><br>
+                            <span>Loteamento Bondarovshy</span>
+                        </div>
+                        <div class="card-details">
+                            <span>
+                                <span><img src="src/images/icons/expand.png" width="12" alt="icone área do imóvel"></span>
+                                <span>Área m²</span>
+                                <span>-</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone quartos"></span>
+                                <span>Dorm.</span>
+                                <span>3</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone suítes"></span>
+                                <span>Suítes</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/car.png" width="12" alt="icone vagas na garagem"></span>
+                                <span>Vagas</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/water.png" width="12" alt="icone banheiros"></span>
+                                <span>Banheiros</span>
+                                <span>2</span>
+                            </span>
+                        </div>
+                        <button class="green">DETALHES</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product-price">R$ 600,00</div>
+                    <div class="card-image">
+                        <img src="src/images/houses/casa1.jpg" alt="product image">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <b>Casa para venda</b><br>
+                            <span>Loteamento Bondarovshy</span>
+                        </div>
+                        <div class="card-details">
+                            <span>
+                                <span><img src="src/images/icons/expand.png" width="12" alt="icone área do imóvel"></span>
+                                <span>Área m²</span>
+                                <span>-</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone quartos"></span>
+                                <span>Dorm.</span>
+                                <span>3</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone suítes"></span>
+                                <span>Suítes</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/car.png" width="12" alt="icone vagas na garagem"></span>
+                                <span>Vagas</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/water.png" width="12" alt="icone banheiros"></span>
+                                <span>Banheiros</span>
+                                <span>2</span>
+                            </span>
+                        </div>
+                        <button class="green">DETALHES</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button class="action">Ver mais imóveis para venda</button>
+
+
+        <section class="products">
+            <div class="title">
+                <h2>ALUGUEL</h2>
+                <h3>Destaques para locação</h3>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <div class="product-price">R$ 600,00</div>
+                    <div class="card-image">
+                        <img src="src/images/houses/casa1.jpg" alt="product image">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <b>Casa para venda</b><br>
+                            <span>Loteamento Bondarovshy</span>
+                        </div>
+                        <div class="card-details">
+                            <span>
+                                <span><img src="src/images/icons/expand.png" width="12" alt="icone área do imóvel"></span>
+                                <span>Área m²</span>
+                                <span>-</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone quartos"></span>
+                                <span>Dorm.</span>
+                                <span>3</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone suítes"></span>
+                                <span>Suítes</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/car.png" width="12" alt="icone vagas na garagem"></span>
+                                <span>Vagas</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/water.png" width="12" alt="icone banheiros"></span>
+                                <span>Banheiros</span>
+                                <span>2</span>
+                            </span>
+                        </div>
+                        <button class="green">DETALHES</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product-price">R$ 600,00</div>
+                    <div class="card-image">
+                        <img src="src/images/houses/casa4.jpg" alt="product image">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <b>Casa para venda</b><br>
+                            <span>Loteamento Bondarovshy</span>
+                        </div>
+                        <div class="card-details">
+                            <span>
+                                <span><img src="src/images/icons/expand.png" width="12" alt="icone área do imóvel"></span>
+                                <span>Área m²</span>
+                                <span>-</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone quartos"></span>
+                                <span>Dorm.</span>
+                                <span>3</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone suítes"></span>
+                                <span>Suítes</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/car.png" width="12" alt="icone vagas na garagem"></span>
+                                <span>Vagas</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/water.png" width="12" alt="icone banheiros"></span>
+                                <span>Banheiros</span>
+                                <span>2</span>
+                            </span>
+                        </div>
+                        <button class="green">DETALHES</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product-price">R$ 600,00</div>
+                    <div class="card-image">
+                        <img src="src/images/houses/casa1.jpg" alt="product image">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <b>Casa para venda</b><br>
+                            <span>Loteamento Bondarovshy</span>
+                        </div>
+                        <div class="card-details">
+                            <span>
+                                <span><img src="src/images/icons/expand.png" width="12" alt="icone área do imóvel"></span>
+                                <span>Área m²</span>
+                                <span>-</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone quartos"></span>
+                                <span>Dorm.</span>
+                                <span>3</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone suítes"></span>
+                                <span>Suítes</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/car.png" width="12" alt="icone vagas na garagem"></span>
+                                <span>Vagas</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/water.png" width="12" alt="icone banheiros"></span>
+                                <span>Banheiros</span>
+                                <span>2</span>
+                            </span>
+                        </div>
+                        <button class="green">DETALHES</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product-price">R$ 600,00</div>
+                    <div class="card-image">
+                        <img src="src/images/houses/casa1.jpg" alt="product image">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <b>Casa para venda</b><br>
+                            <span>Loteamento Bondarovshy</span>
+                        </div>
+                        <div class="card-details">
+                            <span>
+                                <span><img src="src/images/icons/expand.png" width="12" alt="icone área do imóvel"></span>
+                                <span>Área m²</span>
+                                <span>-</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone quartos"></span>
+                                <span>Dorm.</span>
+                                <span>3</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone suítes"></span>
+                                <span>Suítes</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/car.png" width="12" alt="icone vagas na garagem"></span>
+                                <span>Vagas</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/water.png" width="12" alt="icone banheiros"></span>
+                                <span>Banheiros</span>
+                                <span>2</span>
+                            </span>
+                        </div>
+                        <button class="green">DETALHES</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product-price">R$ 600,00</div>
+                    <div class="card-image">
+                        <img src="src/images/houses/casa3.jpg" alt="product image">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <b>Casa para venda</b><br>
+                            <span>Loteamento Bondarovshy</span>
+                        </div>
+                        <div class="card-details">
+                            <span>
+                                <span><img src="src/images/icons/expand.png" width="12" alt="icone área do imóvel"></span>
+                                <span>Área m²</span>
+                                <span>-</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone quartos"></span>
+                                <span>Dorm.</span>
+                                <span>3</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone suítes"></span>
+                                <span>Suítes</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/car.png" width="12" alt="icone vagas na garagem"></span>
+                                <span>Vagas</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/water.png" width="12" alt="icone banheiros"></span>
+                                <span>Banheiros</span>
+                                <span>2</span>
+                            </span>
+                        </div>
+                        <button class="green">DETALHES</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product-price">R$ 600,00</div>
+                    <div class="card-image">
+                        <img src="src/images/houses/casa1.jpg" alt="product image">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <b>Casa para venda</b><br>
+                            <span>Loteamento Bondarovshy</span>
+                        </div>
+                        <div class="card-details">
+                            <span>
+                                <span><img src="src/images/icons/expand.png" width="12" alt="icone área do imóvel"></span>
+                                <span>Área m²</span>
+                                <span>-</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone quartos"></span>
+                                <span>Dorm.</span>
+                                <span>3</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/bed.png" width="12" alt="icone suítes"></span>
+                                <span>Suítes</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/car.png" width="12" alt="icone vagas na garagem"></span>
+                                <span>Vagas</span>
+                                <span>1</span>
+                            </span>
+                            <span>
+                                <span><img src="src/images/icons/water.png" width="12" alt="icone banheiros"></span>
+                                <span>Banheiros</span>
+                                <span>2</span>
+                            </span>
+                        </div>
+                        <button class="green">DETALHES</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button class="action">Ver mais imóveis para locação</button>
+    </main>    
+
+
+    <footer>
+        <div>
+            <span class="footer-title">MENU</span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Empresa</a></li>
+                <li><a href="#">Anuncie aqui</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div>
+            <span class="footer-title">VEJA TAMBÉM</span>
+            <ul>
+                <li><a href="#">Apartamento</a></li>
+                <li><a href="#">Casa</a></li>
+                <li><a href="#">Kitnet</a></li>
+                <li><a href="#">Terreno</a></li>
+                <li><a href="#">Na planta</a></li>
+            </ul>
+        </div>
+        <div>
+            <span class="footer-title">CONTATO</span>
+            <ul>
+                <li><a href="#">(24) 3353-1234</a></li>
+                <li><a href="#">(24) 99975-1234</a></li>
+                <li><a href="#">nathanbabahia@gmail.com</a></li>
+            </ul>
+        </div>
+        <div>
+            <span class="footer-title">ENDEREÇO</span>
+            <ul>
+                <li>Rua das Flores, 67 - Santa Amália - Vassouras/RJ</li>
+                <li>
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=vassouras&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <div id="copy-right">
+        Nathan Imóveis - Todos os direitos reservados &copy; <script>document.write(new Date().getFullYear())</script>
+    </div>
+
+    <button id="float-button"><img src="src/images/icons/whatsapp.png" width="36"/></button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="src/js/carousel.js"></script>
+    <script src="src/js/data.js"></script>
+    <script src="src/js/index.js"></script>
+</body>
+</html>
