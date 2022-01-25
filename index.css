@@ -1,7 +1,9 @@
 :root {
-    --primary: #ef740d;
-    --primary-with-opacity: #ef740ddd;
-    --grey: #dddddd;
+    --primary: #9c1c1c;
+    --primary-with-opacity: #9c1c1cdd;
+    --secondary: #a91e1e;
+    --grey: #cbcbcb;
+    --grey-with-opacity: #cbcbcb80;
     --padding: 150px;
     --break-products: repeat(3, 1fr);
     --break-filters: repeat(4, 1fr);
@@ -142,17 +144,9 @@ section#menu-mobile button {
 }
 
 main #banner {
-    min-height: 400px;
-    margin-top: 70px;
+    width: 100vw;
     background-color: var(--primary);
-    padding: 0 var(--padding) 36px var(--padding);
-}
-
-main #banner h2:first-child {
-    text-align: center;
-    color: white;
-    font-size: 32px;
-    padding: 24px;
+    margin-top: 70px; 
 }
 
 main #banner #carousel {
@@ -160,77 +154,101 @@ main #banner #carousel {
     justify-content: space-between;
     overflow-x: scroll;
     position: relative;
+    width: 100vw;
+    overflow-y: hidden;
+    max-height: 600px;
 }
 
 main #banner #carousel .card {
     position: relative;
-    max-width: 70%;
-    margin: 16px 16px 16px 0;
 }
 
-main #banner #carousel .card:last-child {
-    margin: 16px 0 16px 0;
+main #banner #carousel .card-title {
+    text-align: center;
 }
 
 main #banner #carousel .card-title b {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 main #banner #carousel .card-image {
-    height: 300px;
+    width: 100vw;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
+main #banner #carousel .card-image img {
+    width: 100vw;
+    min-height: 300px;
+}
+
 main #banner #carousel .card-info {
-    background-color: var(--grey);
+    background-color: var(--grey-with-opacity);
+    max-width: 100vw;
     padding: 16px;
-}
-
-main #banner #carousel .card-details {
-    display: flex;    
-    justify-content: space-between;
-    margin: 16px auto;
-    font-size: 9px;    
-}
-
-main #banner #carousel .card-details > span {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    top: 0;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main #banner #carousel .card-info button {
+    width: 300px;
+}
+
+main #banner #carousel .card-info .card-details {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main #banner #carousel .card-info .card-details > span {
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
 }
 
 main #banner #carousel .product-price {
-    position: absolute;
-    top: 220px;
-    right: 0;
-    background-color: var(--primary-with-opacity);    
-    color: white;
+    color: var(--primary);    
     font-weight: bold;
     font-size: 36px;
     padding: 4px;
     min-width: 150px;
-    text-align: right;
 }
 
 main #banner #prev-carousel {
-    color: white;
     position: absolute;
-    top: 70%;
     left: 36px;
-    background-color: transparent;
+    top: 350px;
     display: var(--break-carousel-controls);
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
 }
 
 main #banner #next-carousel {
-    color: white;
     position: absolute;
-    top: 70%;
-    right: 36px;
-    background-color: transparent;
+    right: 8px;
+    top: 350px;
     display: var(--break-carousel-controls);
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+main #banner #prev-carousel img,
+main #banner #next-carousel img {
+    filter: invert(1);
 }
 
 main #filters {
@@ -421,6 +439,11 @@ button.primary {
     color: white;
 }
 
+button.secondary {
+    background-color: var(--secondary);
+    color: white;
+}
+
 button.green {
     background-color: green;
     color: white;
@@ -514,7 +537,7 @@ select, input {
         --show-btn-menu: block;
         --show-menu-content: none;
         --break-footer: repeat(2, 1fr);
-        --break-carousel-controls: block;
+        --break-carousel-controls: flex;
     }
 }
 
@@ -525,6 +548,6 @@ select, input {
         --show-btn-menu: none;
         --show-menu-content: flex;
         --break-footer: repeat(4, 1fr);
-        --break-carousel-controls: block;
+        --break-carousel-controls: flex;
     }
 }

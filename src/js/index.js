@@ -18,3 +18,11 @@ $(function () {
             carousel.build()
     }
 })
+
+
+$(function () {
+    function autoScrollCarousel () {
+        CarouselItem.handleCarousel({direction:'next', carouselId: 'carousel'})
+    }
+    setInterval(autoScrollCarousel, 5000)
+})
